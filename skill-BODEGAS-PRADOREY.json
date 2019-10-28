@@ -1,0 +1,4417 @@
+{
+  "name": "BODEGAS PRADOREY",
+  "intents": [
+    {
+      "intent": "GENERAL_INFO",
+      "examples": [
+        {
+          "text": "¿A qué horas se puede visitar la @Bodega?"
+        },
+        {
+          "text": "¿Está cerca la posada de la bodega?"
+        },
+        {
+          "text": "Donde se encuentra la bodega?"
+        },
+        {
+          "text": "Donde esta la bodega?"
+        },
+        {
+          "text": "¿A qué horas atiende la bodega?"
+        },
+        {
+          "text": "¿cómo puedo llegar a la bodega?"
+        },
+        {
+          "text": "¿cómo puedo llegar a la posada?"
+        },
+        {
+          "text": "puedes decirme dónde está la posada?"
+        },
+        {
+          "text": "quería la dirección de la posada"
+        },
+        {
+          "text": "dónde está la bodega?"
+        },
+        {
+          "text": "donde está la bodega"
+        },
+        {
+          "text": "busco la dirección de la bodega"
+        },
+        {
+          "text": "¿Dónde está la @Bodega?"
+        },
+        {
+          "text": "puedes darme la dirección de la bodega"
+        },
+        {
+          "text": "¿A qué hora se puede llegar a la @Posada, como muy tarde?"
+        },
+        {
+          "text": "¿Dónde está la @Posada?"
+        },
+        {
+          "text": "quería la dirección de la bodega"
+        }
+      ],
+      "description": "Preguntas generales sobre la bodega y la posada"
+    },
+    {
+      "intent": "Agradecer",
+      "examples": [
+        {
+          "text": "Perfecto, gracias"
+        },
+        {
+          "text": "muchísimas gracias"
+        },
+        {
+          "text": "Gracias"
+        },
+        {
+          "text": "vale, muchas gracias"
+        },
+        {
+          "text": "muchas gracias"
+        }
+      ],
+      "description": "dar las gracias"
+    },
+    {
+      "intent": "todos_los_vinos",
+      "examples": [
+        {
+          "text": "dime los vinos que hay en la bodega"
+        },
+        {
+          "text": "dime todos los vinos que tiene PradoRey"
+        },
+        {
+          "text": "dime los vinos que tenéis"
+        },
+        {
+          "text": "dime todos los vinos que puedo comprar en PradoRey"
+        },
+        {
+          "text": "dame una lista de todos los vinos"
+        },
+        {
+          "text": "dime todos los vinos"
+        },
+        {
+          "text": "dime que vinos tienen"
+        },
+        {
+          "text": "dime que vinos tienes"
+        }
+      ],
+      "description": "dime todos los vinos"
+    },
+    {
+      "intent": "CONFIRMATION",
+      "examples": [
+        {
+          "text": "Si si"
+        },
+        {
+          "text": "si"
+        },
+        {
+          "text": "Confirmo"
+        },
+        {
+          "text": "Así es"
+        },
+        {
+          "text": "Sí"
+        },
+        {
+          "text": "acepto"
+        },
+        {
+          "text": "por supuesto"
+        },
+        {
+          "text": "sí, rápido"
+        },
+        {
+          "text": "Sí, por favor"
+        },
+        {
+          "text": "Sí, gracias"
+        }
+      ],
+      "description": "Confirmación a las preguntas del asistente"
+    },
+    {
+      "intent": "ABOUT_A_PURCHASE",
+      "examples": [
+        {
+          "text": "Puedo devolver el pedido?"
+        },
+        {
+          "text": "Cuanto costaría anular la reserva de este fin de semana?"
+        },
+        {
+          "text": "acabo de hacer un pedido online y creo que he puesto mal la dirección. El pedido es el $numero_pedido y quiero que me llegue a $location"
+        },
+        {
+          "text": "podrías decirme qué día llegará el pedido $numero_pedido?"
+        },
+        {
+          "text": "No me ha llegado el pedido. Puedes decirme cual es el estado de envío?"
+        }
+      ],
+      "description": "Reservas, ventas de vino online"
+    },
+    {
+      "intent": "SUGGESTION_FOR_MARIDAJE",
+      "examples": [
+        {
+          "text": "¿que vino puede combinar con un asado?",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                31,
+                36
+              ]
+            }
+          ]
+        },
+        {
+          "text": "que vino puede combinar con carne de caza_mayor?",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                37,
+                47
+              ]
+            }
+          ]
+        },
+        {
+          "text": "que vino puede combinar con pescado_azul?",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                28,
+                40
+              ]
+            }
+          ]
+        },
+        {
+          "text": "que vino puede combinar con carne de caza_menor?",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                37,
+                47
+              ]
+            }
+          ]
+        },
+        {
+          "text": "con que vino acompañamos los mariscos?",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                29,
+                37
+              ]
+            }
+          ]
+        },
+        {
+          "text": "con que vino acompañamos arroces?",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                25,
+                32
+              ]
+            }
+          ]
+        },
+        {
+          "text": "con que vino acompañamos al chocolate?",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                28,
+                37
+              ]
+            }
+          ]
+        },
+        {
+          "text": "con que vino acompañamos el postre?",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                28,
+                34
+              ]
+            }
+          ]
+        },
+        {
+          "text": "con que combina una ensalada?",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                20,
+                28
+              ]
+            }
+          ]
+        },
+        {
+          "text": "con que combina unos quesos_curados?",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                21,
+                35
+              ]
+            }
+          ]
+        },
+        {
+          "text": "con que combina unos quesos_semicurados?",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                21,
+                39
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Que vino acompañan a los aperitivos?",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                25,
+                35
+              ]
+            }
+          ]
+        },
+        {
+          "text": "con que combina unos quesos_cremosos?",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                21,
+                36
+              ]
+            }
+          ]
+        },
+        {
+          "text": "con que combina los embutidos?",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                20,
+                29
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Con qué @vino acompaño aves?",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                22,
+                26
+              ]
+            }
+          ]
+        },
+        {
+          "text": "recomiendame un @vino para acompañar carnes_blancas",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                37,
+                51
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Recomiéndame un @vino para acompañar pescados_blancos",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                37,
+                53
+              ]
+            }
+          ]
+        },
+        {
+          "text": "¿Qué @vino puede combinar con un plato de carne_roja?",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                40,
+                50
+              ]
+            }
+          ]
+        },
+        {
+          "text": "¿Qué vino puede combinar con una pasta?",
+          "mentions": [
+            {
+              "entity": "plato",
+              "location": [
+                31,
+                36
+              ]
+            }
+          ]
+        }
+      ],
+      "description": "El usuario busca un vino para acompañar una comida concreta"
+    },
+    {
+      "intent": "MAKE_A_RESERVATION",
+      "examples": [
+        {
+          "text": "Querría reservar una habitación para dos personas del 10 al 15 de julio"
+        },
+        {
+          "text": "Quisiera hacer una reserva para el próximo fin de semana"
+        },
+        {
+          "text": "Querría reservar para el plan del teatro del próximo jueves"
+        },
+        {
+          "text": "quiero hacer una visita con alojamiento el próximo día 15"
+        },
+        {
+          "text": "me gustaría reservar una visita a la bodega para 10 personas el próximo sábado a las 17:00h"
+        },
+        {
+          "text": "reservar una habitacion"
+        },
+        {
+          "text": "reservar una actividad"
+        },
+        {
+          "text": "quería reservar",
+          "mentions": [
+            {
+              "entity": "Posada",
+              "location": [
+                7,
+                15
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Quiero reservar"
+        },
+        {
+          "text": "una reserva"
+        }
+      ],
+      "description": "Hacer una reserva en la posada de Real Sitio de Ventosilla"
+    },
+    {
+      "intent": "ABOUT_WINES",
+      "examples": [
+        {
+          "text": "dime sobre @vino"
+        },
+        {
+          "text": "busco un @vino"
+        },
+        {
+          "text": "que vinos tempranillos tienen?"
+        },
+        {
+          "text": "que @uva utilizan en la bodega?",
+          "mentions": [
+            {
+              "entity": "producto",
+              "location": [
+                24,
+                30
+              ]
+            },
+            {
+              "entity": "uva",
+              "location": [
+                5,
+                8
+              ]
+            }
+          ]
+        },
+        {
+          "text": "@vino crianza"
+        },
+        {
+          "text": "@vino gran_reserva"
+        },
+        {
+          "text": "@vino reserva"
+        },
+        {
+          "text": "@vino blanco"
+        },
+        {
+          "text": "dime sobre @producto blancos"
+        },
+        {
+          "text": "dime sobre @vino gran_reserva",
+          "mentions": [
+            {
+              "entity": "tiempo_maduracion",
+              "location": [
+                17,
+                29
+              ]
+            }
+          ]
+        },
+        {
+          "text": "dime sobre @vino reserva"
+        },
+        {
+          "text": "dime sobre @producto crianza"
+        },
+        {
+          "text": "dime sobre @producto tintos"
+        },
+        {
+          "text": "Quiero que me guies lo mejor posible para comprar un @vino"
+        },
+        {
+          "text": "Queria comprar un vino con denominacion_de_origen Ribera_del_Duero",
+          "mentions": [
+            {
+              "entity": "DO",
+              "location": [
+                27,
+                49
+              ]
+            }
+          ]
+        },
+        {
+          "text": "¿Qué tipos_de_vino teneis?",
+          "mentions": [
+            {
+              "entity": "VINO",
+              "location": [
+                3,
+                16
+              ]
+            }
+          ]
+        },
+        {
+          "text": "¿Qué precio tiene el @producto finca_Real_sitio_de_ventosilla?",
+          "mentions": [
+            {
+              "entity": "producto",
+              "location": [
+                29,
+                59
+              ]
+            }
+          ]
+        },
+        {
+          "text": "¿En qué se diferencia el @producto pradorey_elite del producto finca_real_sitio_de_ventosilla?"
+        },
+        {
+          "text": "Elaboran @vino rosados?"
+        },
+        {
+          "text": "Elaboran @vino gran_reserva?",
+          "mentions": [
+            {
+              "entity": "tiempo_maduracion",
+              "location": [
+                15,
+                27
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Elaboran @vino reserva?"
+        },
+        {
+          "text": "Elaboran @vino tintos?"
+        },
+        {
+          "text": "Elaboran @vino crianza?",
+          "mentions": [
+            {
+              "entity": "tiempo_maduracion",
+              "location": [
+                15,
+                22
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Elaboran vinos blancos?"
+        }
+      ],
+      "description": "información acerca de los vinos"
+    },
+    {
+      "intent": "ABOUT_OTHER_PRODUCTS",
+      "examples": [
+        {
+          "text": "¿Está muy lejos la posada de la bodega?"
+        },
+        {
+          "text": "Hay disponibilidad de habitaciones para la posada este fin de semana?"
+        },
+        {
+          "text": "¿Cómo está hecho el queso?"
+        },
+        {
+          "text": "El aceite de oliva es producción propia"
+        },
+        {
+          "text": "cuanto cuesta una habitación para dos personas en la posada de Real Sitio de Ventosilla?"
+        }
+      ],
+      "description": "Other products are: Inn or hotel reservations, visits to the winery, cheese, olive oil"
+    },
+    {
+      "intent": "ABOUT_WINERY",
+      "examples": [
+        {
+          "text": "información acerca de la bodega"
+        },
+        {
+          "text": "que vinos rosados tienen?"
+        },
+        {
+          "text": "En qué consiste la visita a la bodega"
+        },
+        {
+          "text": "Cómo se visita la bodega"
+        },
+        {
+          "text": "quien puede visitar a la bodega"
+        },
+        {
+          "text": "Cuanto cuesta visitar la bodega"
+        },
+        {
+          "text": "Cuando se puede visitar la bodega"
+        },
+        {
+          "text": "Qué se puede hacer en la bodega"
+        }
+      ],
+      "description": "El usuario necesita información acerca de la bodega"
+    },
+    {
+      "intent": "SPECIFIC_WINE",
+      "examples": [
+        {
+          "text": "dime un @vino tinto gran_reserva"
+        },
+        {
+          "text": "dime qué @vino blancos tenéis"
+        },
+        {
+          "text": "qué @vino blancos hay en PradoRey?"
+        },
+        {
+          "text": "Cual es el @vino de PradoRey con mejor puntuación Peñín"
+        },
+        {
+          "text": "dime que @vino tienes?"
+        },
+        {
+          "text": "dime un @vino que tenga maceración carbónica"
+        }
+      ],
+      "description": "pregunta por un @VINO específico"
+    },
+    {
+      "intent": "TIMES",
+      "examples": [
+        {
+          "text": "¿A qué horas atiende el teléfono la @bodega?"
+        },
+        {
+          "text": "¿A qué horas son las visitas a la @bodega?"
+        },
+        {
+          "text": "¿A qué horas son el @teatro?"
+        },
+        {
+          "text": "¿A qué horas atienda la @bodega?"
+        },
+        {
+          "text": "¿A qué horas se puede hacer check-in en la @posada?"
+        }
+      ],
+      "description": "El usuario desea saber a qué horas abre la bodega o la posada, a qué horas se realizan las distintas actividades"
+    },
+    {
+      "intent": "hablar",
+      "examples": [
+        {
+          "text": "buenas tardes"
+        },
+        {
+          "text": "buenas noches"
+        },
+        {
+          "text": "buenas"
+        },
+        {
+          "text": "¿quien eres?"
+        },
+        {
+          "text": "¿qué tal?"
+        },
+        {
+          "text": "hola"
+        },
+        {
+          "text": "buenos días"
+        }
+      ],
+      "description": "El usuario cambia de tema. No quiere hacer una reserva, ni preguntar sobre vinos"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "plato",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "caza_mayor",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "quesos_cremosos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Embutidos",
+          "synonyms": [
+            "Chorizo",
+            "Jamon",
+            "Lomo",
+            "Chacinas",
+            "Embutido",
+            "Lomo iberico"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "quesos_semicurados",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Queso curado",
+          "synonyms": [
+            "Queso",
+            "Quesos",
+            "Quesos picantes"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Queso semicurado",
+          "synonyms": [
+            "Quesos de curación media",
+            "Quesos",
+            "Queso"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Aperitivos",
+          "synonyms": [
+            "aperitivo",
+            "aperitivos con foie gras",
+            "frutos secos",
+            "foie gras"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Quesos cremosos",
+          "synonyms": [
+            "Quesos",
+            "Queso",
+            "Quesos suaves"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Chocolates",
+          "synonyms": [
+            "Chocolate",
+            "Chocolate amargo",
+            "Bombones de chocolate"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "chocolate",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ensalada",
+          "synonyms": [
+            "Ensalada césar",
+            "Ensalada Mixta",
+            "Ensalada de pollo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mariscos",
+          "synonyms": [
+            "Sopa de mariscos",
+            "Arroces con mariscos",
+            "Arroz con mariscos",
+            "Caldosos de mariscos",
+            "Ensalada templada de mariscos",
+            "paella",
+            "Paella de mariscos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pastas",
+          "synonyms": [
+            "pastas con salsas ligeras",
+            "pastas frescas con salsa de nata o queso",
+            "fideua"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pescado azul",
+          "synonyms": [
+            "Boquerón",
+            "Anguila",
+            "Arenque",
+            "Atún",
+            "Bonito",
+            "Jurel",
+            "Lamprea",
+            "Salmón",
+            "Salmonete",
+            "Sardina",
+            "Caballa",
+            "Anchoas",
+            "pescados azules",
+            "sopa de pescado",
+            "pescados fritos",
+            "fritura de pescado",
+            "pescaito frito"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pescado blanco",
+          "synonyms": [
+            "gallo",
+            "rape",
+            "merluza",
+            "lenguado",
+            "bacalao",
+            "rodaballo",
+            "gallineta",
+            "faneca",
+            "lubina",
+            "dorada",
+            "mero",
+            "pescados blancos",
+            "pescados blancos grasos",
+            "pescadilla",
+            "pescados fritos",
+            "fritura de pescado",
+            "sopa de pescado",
+            "pescaito frito"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "pescado_azul",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pescados_blancos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "caza_menor",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Caza menor",
+          "synonyms": [
+            "Caza menor",
+            "Caza menor de pluma",
+            "Caza menor de pelo",
+            "caza_menor"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Caza mayor",
+          "synonyms": [
+            "Caza",
+            "caza_mayor"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "carnes_blancas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Carnes blancas",
+          "synonyms": [
+            "Pollo",
+            "Pavo",
+            "Conejo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Carne roja",
+          "synonyms": [
+            "Lechazo",
+            "Carne roja a la plancha",
+            "Carne roja a la brasa",
+            "ternera",
+            "chuleta de buey",
+            "toro estofado",
+            "rabo de toro",
+            "Cordero"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Aves",
+          "synonyms": [
+            "Pato",
+            "Oca",
+            "Ganso",
+            "Codorniz",
+            "Perdiz",
+            "Pavo",
+            "Pollo",
+            "Caza menor de pluma",
+            "Ave"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Asados",
+          "synonyms": [
+            "Asado",
+            "Lechazo",
+            "Pollo asado"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Arroces",
+          "synonyms": [
+            "Arroces melosos",
+            "Arroces caldosos",
+            "Risotto",
+            "Paella"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "a pas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": " ave",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": " asad",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "postre",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Postres",
+          "synonyms": [
+            "Postre"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "quesos_curados",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "DO",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Rioja",
+          "synonyms": [
+            "Región Vitivinícola de España Rioja"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Ribera del Duero",
+          "synonyms": [
+            "Denominación Ribera del Duero",
+            "Denominación Ribera",
+            "DO Ribera de Duero",
+            "Región Vitvinícola de España de la Ribera del río Duero",
+            "Ribera_del_Duero"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Denominación de Origen",
+          "synonyms": [
+            "D.O.",
+            "DO",
+            "Denominación de origen protegida",
+            "D.O.P.",
+            "denominacion_de_origen",
+            "Ribera_del_Duero"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "teatro",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "teatro",
+          "synonyms": [
+            "obra de teatro",
+            "obra teatralizada"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "aroma",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "@aroma frutos rojos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "@aroma melocotón",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "@aroma chocolate",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "@aroma café",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Un @vino tiene @aroma",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Bodega",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "La bodega PradoRey",
+          "synonyms": [
+            "la bodega",
+            "bodegas pradorey",
+            "winery pradorey",
+            "wineries pradorey",
+            "The winery",
+            "El lugar donde se prepara y almacena el vino de marca PradoRey",
+            "bodega",
+            "bodegas"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "@location",
+          "synonyms": [
+            "Carretera CL-619 kilómetro 66. Burgos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "horario de atención de la bodega",
+          "synonyms": [
+            "A qué hora atiende la bodega"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "El edificio de la bodega",
+          "synonyms": [
+            "las oficinas de la bodega",
+            "el edificio",
+            "las instalaciones",
+            "bodega"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "VINO",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "é tipos_de_vi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "crianza",
+          "synonyms": [
+            "vino crianza",
+            "vinos crianza"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "tinto",
+          "synonyms": [
+            "vino tinto",
+            "vinos titntos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "rose",
+          "synonyms": [
+            "vino rose",
+            "vinos rose"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "rosado",
+          "synonyms": [
+            "vino rosado",
+            "vinos rosados"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "generoso",
+          "synonyms": [
+            "vino generoso",
+            "vinos generosos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "espumoso",
+          "synonyms": [
+            "vino espumoso",
+            "vinos espumosos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "blanco",
+          "synonyms": [
+            "vino blanco",
+            "vinos blancos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "tiempo_de_maduracion",
+          "synonyms": [
+            "tiempo de maduración",
+            "tiempo en @barrica",
+            "tiempo en @tinaja",
+            "crianza"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "se compone de un tipo de @uva",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "los vinos tienen un maridaje",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "@aroma",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "reserva",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "@producto",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Posada",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "reservar",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "a pas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": " ave",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "caza_mayor",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pescado_azul",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "caza_menor",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "carnes_blancas",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pescados_blancos",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": " asad",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "@location",
+          "synonyms": [
+            "carretera CL-619 kilómetro 64",
+            "carretera cl-619 km 64"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Posada Real Sitio de Ventosilla",
+          "synonyms": [
+            "la posada",
+            "el hotel",
+            "el hostal"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "bebida",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "vino",
+          "synonyms": [
+            "caldo",
+            "vino",
+            "un buen vino",
+            "un buen caldo"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "uva",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "cabernet-sauvignon",
+          "synonyms": [
+            "Cabernet Sauvignon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Garnacha tinta",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Melbec",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Merlot",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Albillo Mayor",
+          "synonyms": [
+            "Albillo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "tempranillo",
+          "synonyms": [
+            "Tempranillo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Verdejo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sauvignon Blanc",
+          "synonyms": [
+            "uva"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Blanc de Noirs",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "cata_de_vinos",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "cata horizontal",
+          "synonyms": [
+            "misma bodega pero diferentes cosechas"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "probar diferentes tipos de @vino",
+          "synonyms": [
+            "saborear diferentes tipos de @vino",
+            "beber un poco de dos o más tipos de @vino"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "cata vertical",
+          "synonyms": [
+            "vinos diferentes pero misma cosecha y misma @DO",
+            "vinos diferentes pero mismo año y misma denominación de origen"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "producto",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "vino PRADOREY SAUVIGNON BLANC",
+          "synonyms": [
+            "@VINO blanco",
+            "@uva: (Sauvignon Blanc)",
+            "@tiempo_maduracion Crianza sobre lías durante 3 meses",
+            "bodega"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vino FINCA REAL SITIO DE VENTOSILLA",
+          "synonyms": [
+            "@VINO tinto Gran Reserva",
+            "@tiempo_maduracion 24 meses en barricas de roble francés",
+            "@tiempo_maduracion 6 meses en conos de madera de Nevers",
+            "@DO Ribera del Duero",
+            "@uva: ( 2% Merlot)",
+            "@uva: (3% Cabernet Sauvignon)",
+            "@uva: ( 95% Tempranillo)",
+            "o finca_real_sitio_de_ventosil"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vino PRADOREY ELITE",
+          "synonyms": [
+            "@VINO tinto",
+            "@uva tempranillo clon élite",
+            "@tiempo_maduracion 14 meses en barricas de roble frances",
+            "@tiempo_maduracion 6 meses en conos de madera de Nevers",
+            "@DO Ribera del duero",
+            "y eli"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vino EL BUEN ALFARERO",
+          "synonyms": [
+            "@VINO tinto",
+            "@tiempo_maduracion Crianza durante 7 meses en tinaja de barro",
+            "@uva: (95% tempranillo)",
+            "@uva: (5% albillo)",
+            "@DO Ribera del Duero",
+            "crianza"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vino ADARO",
+          "synonyms": [
+            "@VINO tinto",
+            "@uva tempranillo",
+            "@tiempo_maduracion Joven",
+            "@tiempo_maduracion 12 meses en barricas de roble frances",
+            "@tiempo_maduracion 3 meses en conos de madera de Nevers",
+            "@DO Ribera del Duero"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vino PRADOREY ROSADO",
+          "synonyms": [
+            "@VINO rosado",
+            "@uva: (50% tempranillo)",
+            "@uva: (50% Merlot)",
+            "@tiempo_maduracion 3 meses en barricas de roble frances",
+            "@DO Ribera del Duero",
+            "@VINO rose"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vino PRADOREY VERDEJO",
+          "synonyms": [
+            "@VINO blanco",
+            "@uva: (verdejo)",
+            "@tiempo_maduracion Crianza sobre lías durante 3 meses",
+            "@DO Rueda"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vino PRADOREY ORIGEN",
+          "synonyms": [
+            "@VINO tinto",
+            "@tiempo_maduracion tinaja de barro",
+            "@tiempo_maduracion crianza en barrica roble europeo y americano",
+            "@uva: ( 95%Tempranillo)",
+            "@uva: (3% Cabernet Sauvignon)",
+            "@uva: (2% Merlot)",
+            "@DO Ribera del Duero"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vino FINCA LA MINA",
+          "synonyms": [
+            "@uva: ( 2% Merlot)",
+            "@tiempo_maduracion crianza de 18 meses en barrica",
+            "@tiempo_maduracion 6 meses en conos de Nevers",
+            "@VINO tinto Reserva",
+            "@uva: (3% Cabernet Sauvignon)",
+            "@DO Ribera del Duero",
+            "@uva: ( 95% Tempranillo)"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vino PRADOREY PR3 Barricas",
+          "synonyms": [
+            "@VINO blanco",
+            "@uva: (verdejo)",
+            "@tiempo_maduracion 9 meses de crianza",
+            "@tiempo_maduracion Crianza sobre lías con batonage diario",
+            "@DO Rueda"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "reserva",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "vino FINCA VALDELAYEGUA",
+          "synonyms": [
+            "@VINO tinto",
+            "@tiempo_maduracion crianza 12 meses de barrica",
+            "@tiempo_maduracion 3 meses en conos de Nevers",
+            "@DO Ribera del Duero",
+            "@uva: ( 95% Tempranillo)",
+            "@uva: ( 2% Merlot)",
+            "@uva: (3% Cabernet Sauvignon)"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vino EL CUENTISTA",
+          "synonyms": [
+            "@VINO blanco",
+            "@uva tempranillo",
+            "@tiempo_maduracion 9 meses en barricas roble americano",
+            "@tiempo_maduracion Crianza sobre lías de uva verdejo",
+            "@DO Ribera del Duero",
+            "@VINO Blanc de Noir",
+            "crianza",
+            "tempranillo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vino SR. NINO",
+          "synonyms": [
+            "@VINO tinto",
+            "@uva tempranillo",
+            "@DO Ribera del Duero",
+            "@tiempo_maduracion 1 mes en tinajas de barro centenarias"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vino PRADOREY VERDEJO SE",
+          "synonyms": [
+            "@VINO blanco",
+            "@uva: (verdejo)",
+            "@DO Rueda",
+            "@tiempo_maduracion Crianza sobre lías durante 9 meses",
+            "@tiempo_maduracion 3 meses en barricas de roble francés"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vino LIA DE PRADOREY",
+          "synonyms": [
+            "@VINO Rosado",
+            "@uva tempranillo",
+            "@DO Ribera del Duero",
+            "@VINO rose"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "location",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "@Posada Carretera CL-619 km 64, Gumiel de Mercado",
+          "synonyms": [
+            "la carretera CL-619 km 64"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "@Bodega Carretera CL-619 km 66, Gumiel de Mercado",
+          "synonyms": [
+            "la carretera cl- 619 km 66",
+            "the road",
+            "la Carretera CL-619, en el kilómetro 66"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "tiempo_maduracion",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Joven",
+          "synonyms": [
+            "Jóvenes"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Gran_Reserva",
+          "synonyms": [
+            "gran reserva"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "@tinaja",
+          "synonyms": [
+            "tinaja de barro"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "crianza",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "@barrica",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Reserva",
+          "synonyms": [
+            "reserva"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "servicio",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "alojamiento",
+          "synonyms": [
+            "alojamiento en la Posada de Real Sitio de Ventosilla"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "barrica",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "roble",
+          "synonyms": [
+            "madera de roble"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "enoturismo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "@cata de vinos",
+          "synonyms": [
+            "degustación de vinos"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "visita a la bodega",
+          "synonyms": [
+            "visita guiada a la bodega",
+            "visita explicada a la bodega",
+            "visita para grupos",
+            "recorrer la bodega con explicaciones de un guía de la bodega"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "comida",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Está compuesta por @plato",
+          "synonyms": [
+            "Tiene un primer @plato",
+            "Tiene un segundo @plato"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Se acompaña con una @bebida",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "actividad",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "@teatro",
+          "synonyms": [
+            "Representaciones teatralizadas",
+            "Teatro Barroco",
+            "obra de teatro en pradorey",
+            "obra de teatro en el real sitio la ventosilla"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "@enoturismo",
+          "synonyms": [
+            "visitar la bodega",
+            "visitar el lugar donde preparan el vino",
+            "visitar el lugar donde almacenan el vino",
+            "asistir a una explicación de la historia de la bodega"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "language": "en",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-07-10"
+    }
+  },
+  "skill_id": "512e440f-f826-4a75-9a1a-9478f315b137",
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "title": "handler_3_1571821382375",
+      "output": {
+        "text": {
+          "values": [
+            "Necesito que me diga un número de personas"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1571740840934",
+      "conditions": "#CONFIRMATION",
+      "event_name": "nomatch",
+      "dialog_node": "handler_3_1571821382375",
+      "previous_sibling": "handler_10_1571740840937"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_10_1571740840937",
+      "output": {
+        "text": {
+          "values": [
+            "Muy bien ¿Para cuantos adultos?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1571740840934",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1571740840937",
+      "previous_sibling": "handler_3_1571740840937"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_3_1571740840937",
+      "output": {},
+      "parent": "slot_10_1571740840934",
+      "context": {
+        "numero_adultos": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_3_1571740840937"
+    },
+    {
+      "type": "standard",
+      "title": "Vino desconocido",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "VINO DESCONOCIDO. Disculpe, por favor especifique tipo de vino o tipo de uva o un tiempo de maduración."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "anything_else",
+      "dialog_node": "node_7_1572084968634",
+      "previous_sibling": "node_1_1572087075483"
+    },
+    {
+      "type": "standard",
+      "title": "vino blanco",
+      "output": {
+        "generic": [
+          {
+            "title": "Vinos blancos",
+            "options": [
+              {
+                "label": "EL CUENTISTA",
+                "value": {
+                  "input": {
+                    "text": "vino EL CUENTISTA"
+                  }
+                }
+              },
+              {
+                "label": "PRADOREY PR3 BARRICAS",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY PR3 BARRICAS"
+                  }
+                }
+              },
+              {
+                "label": "PRADOREY SAUVIGNON BLANC",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY SAUVIGNON BLANC"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@VINO:blanco",
+      "dialog_node": "node_3_1572173526682",
+      "previous_sibling": "node_6_1572173135484"
+    },
+    {
+      "type": "standard",
+      "title": "FINCA REAL SITIO DE VENTOSILLA",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para ver el Vino <a href=\"https://www.pradorey.es/los-vinos/pradorey-finca-real-sitio-de-ventosilla/\" target=\"blank\">FINCA REAL SITIO DE VENTOSILLA, vaya a la página de nuestro website. </a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@producto:(vino FINCA REAL SITIO DE VENTOSILLA)",
+      "dialog_node": "node_4_1572098313971",
+      "previous_sibling": "node_8_1572098259988"
+    },
+    {
+      "type": "standard",
+      "title": "EL BUEN ALFARERO",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para ver el Vino <a href=\"https://www.pradorey.es/los-vinos/el-buen-alfarero/\" target=\"blank\">EL BUEN ALFARERO, vaya a la página de nuestro website. </a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@producto:(vino EL BUEN ALFARERO)",
+      "dialog_node": "node_3_1572098092338",
+      "previous_sibling": "node_1_1572098039172"
+    },
+    {
+      "type": "standard",
+      "title": "Vino Gran Reserva",
+      "output": {
+        "generic": [
+          {
+            "title": "Vino Gran Reserva",
+            "options": [
+              {
+                "label": "PRADOREY FINCA REAL SITIO DE VENTOSILLA",
+                "value": {
+                  "input": {
+                    "text": "vino FINCA REAL SITIO DE VENTOSILLA"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@tiempo_maduracion:Gran_Reserva",
+      "dialog_node": "node_3_1572175099421",
+      "previous_sibling": "node_1_1572174982404"
+    },
+    {
+      "type": "standard",
+      "title": "PRADOREY ORIGEN",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para ver el Vino <a href=\"https://www.pradorey.es/los-vinos/pradorey-roble/\" target=\"blank\">PRADOREY ORIGEN, vaya a la página de nuestro website.</a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@producto:(vino PRADOREY ORIGEN)",
+      "dialog_node": "node_10_1572092446127",
+      "previous_sibling": "node_6_1572025925422"
+    },
+    {
+      "type": "standard",
+      "title": "PRADOREY VERDEJO SE",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para ver el Vino <a href=\"https://www.pradorey.es/los-vinos/pradorey-verdejo-seleccion-especial/\" target=\"blank\">PRADOREY VERDEJO SE, vaya a la página de nuestro website. </a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@producto:(vino PRADOREY VERDEJO SE)",
+      "dialog_node": "node_4_1572097533652",
+      "previous_sibling": "node_10_1572092446127"
+    },
+    {
+      "type": "standard",
+      "title": "EL CUENTISTA",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para ver el Vino <a href=\"https://www.pradorey.es/los-vinos/el-cuentista/\" target=\"blank\">EL CUENTISTA, vaya a la página de nuestro website. </a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@producto:(vino EL CUENTISTA)",
+      "dialog_node": "node_10_1572098203918",
+      "previous_sibling": "node_7_1572098148058"
+    },
+    {
+      "type": "standard",
+      "title": "SR NIÑO",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para ver el Vino <a href=\"https://www.pradorey.es/los-vinos/srnino/\" target=\"blank\">SR. NIÑO, vaya a la página de nuestro website. </a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@producto:(vino SR. NINO)",
+      "dialog_node": "node_7_1572108809714",
+      "previous_sibling": "node_8_1572108526132"
+    },
+    {
+      "type": "standard",
+      "title": "FINCA LA MINA",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para ver el Vino <a href=\"https://www.pradorey.es/los-vinos/pradorey-finca-la-mina/\" target=\"blank\">FINCA LA MINA, vaya a la página de nuestro website. </a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@producto:(vino FINCA LA MINA)",
+      "dialog_node": "node_8_1572098259988",
+      "previous_sibling": "node_10_1572098203918"
+    },
+    {
+      "type": "standard",
+      "title": "vino rosado",
+      "output": {
+        "generic": [
+          {
+            "title": "Vinos Rosados",
+            "options": [
+              {
+                "label": "LIA DE PRADOREY",
+                "value": {
+                  "input": {
+                    "text": "vino LIA DE PRADOREY"
+                  }
+                }
+              },
+              {
+                "label": "PRADOREY ROSADO",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY ROSADO"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@VINO:rosado ||     @VINO:rose",
+      "dialog_node": "node_6_1572173135484",
+      "previous_sibling": "node_1_1572172824956"
+    },
+    {
+      "type": "standard",
+      "title": "vino tinto",
+      "output": {
+        "generic": [
+          {
+            "title": "Vinos Tintos",
+            "options": [
+              {
+                "label": "EL BUEN ALFARERO",
+                "value": {
+                  "input": {
+                    "text": "vino EL BUEN ALFARERO"
+                  }
+                }
+              },
+              {
+                "label": "ADARO",
+                "value": {
+                  "input": {
+                    "text": "vino ADARO"
+                  }
+                }
+              },
+              {
+                "label": "PRADOREY ELITE",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY ELITE"
+                  }
+                }
+              },
+              {
+                "label": "FINCA LA MINA",
+                "value": {
+                  "input": {
+                    "text": "vino FINCA LA MINA"
+                  }
+                }
+              },
+              {
+                "label": "FINCA VALDELAYEGUA",
+                "value": {
+                  "input": {
+                    "text": "vino FINCA VALDELAYEGUA"
+                  }
+                }
+              },
+              {
+                "label": "SR. NIÑO",
+                "value": {
+                  "input": {
+                    "text": "vino SR. NINO"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@VINO:tinto",
+      "dialog_node": "node_1_1572172824956",
+      "previous_sibling": "node_1_1572086313498"
+    },
+    {
+      "type": "standard",
+      "title": "FINCA VALDELAYEGUA",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para ver el Vino <a href=\"https://www.pradorey.es/los-vinos/pradorey-finca-valdelayegua-crianza/\" target=\"blank\">FINCA VALDELAYEGUA, vaya a la página de nuestro website. </a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@producto:(vino FINCA VALDELAYEGUA)",
+      "dialog_node": "node_3_1572097966016",
+      "previous_sibling": "node_8_1572097914584"
+    },
+    {
+      "type": "standard",
+      "title": "PRADOREY ELITE",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para ver el Vino <a href=\"https://www.pradorey.es/los-vinos/pradorey-elite/\" target=\"blank\">PRADOREY ELITE, vaya a la página de nuestro website. </a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@producto:(vino PRADOREY ELITE)",
+      "dialog_node": "node_1_1572098039172",
+      "previous_sibling": "node_3_1572097966016"
+    },
+    {
+      "type": "standard",
+      "title": "uva tempranillo",
+      "output": {
+        "generic": [
+          {
+            "title": "Vinos PradoRey con uva Tempranillo",
+            "options": [
+              {
+                "label": "El cuentista (100% Tempranillo)",
+                "value": {
+                  "input": {
+                    "text": "vino EL CUENTISTA"
+                  }
+                }
+              },
+              {
+                "label": "Adaro (100% Tempranillo)",
+                "value": {
+                  "input": {
+                    "text": "vino ADARO"
+                  }
+                }
+              },
+              {
+                "label": "Élite (100% Tempranillo clon élite)",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY ELITE"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": " @uva:tempranillo",
+      "dialog_node": "node_1_1572086313498",
+      "previous_sibling": "node_7_1572108809714"
+    },
+    {
+      "type": "standard",
+      "title": "vino crianza",
+      "output": {
+        "generic": [
+          {
+            "title": "Vinos Crianza",
+            "options": [
+              {
+                "label": "EL BUEN ALFARERO",
+                "value": {
+                  "input": {
+                    "text": "vino EL BUEN ALFARERO"
+                  }
+                }
+              },
+              {
+                "label": "EL CUENTISTA",
+                "value": {
+                  "input": {
+                    "text": "vino EL CUENTISTA"
+                  }
+                }
+              },
+              {
+                "label": "PRADOREY PR3 BARRICAS",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY PR3 BARRICAS"
+                  }
+                }
+              },
+              {
+                "label": "PRADOREY FINCA VALDELAYEGUA",
+                "value": {
+                  "input": {
+                    "text": "vino FINCA VALDELAYEGUA"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@VINO:crianza",
+      "dialog_node": "node_6_1572174815590",
+      "previous_sibling": "node_3_1572173526682"
+    },
+    {
+      "type": "standard",
+      "title": "vino reserva",
+      "output": {
+        "generic": [
+          {
+            "title": "Vino Reserva",
+            "options": [
+              {
+                "label": "PRADOREY FINCA LA MINA",
+                "value": {
+                  "input": {
+                    "text": "vino FINCA LA MINA"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@tiempo_maduracion:Reserva",
+      "dialog_node": "node_1_1572174982404",
+      "previous_sibling": "node_6_1572174815590"
+    },
+    {
+      "type": "standard",
+      "title": "PRADOREY SAUVIGNON BLANC",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para ver el Vino <a href=\"https://www.pradorey.es/los-vinos/pradorey-sauvignon-blanc/\" target=\"blank\">PRADOREY SAUVIGNON BLANC, vaya a la página de nuestro website. </a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@producto:(vino PRADOREY SAUVIGNON BLANC)",
+      "dialog_node": "node_8_1572097914584",
+      "previous_sibling": "node_1_1572097815397"
+    },
+    {
+      "type": "standard",
+      "title": "PRADOREY PR3 Barricas",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para ver el Vino <a href=\"https://www.pradorey.es/los-vinos/pr3-barricas/\" target=\"blank\">PR3 BARRICAS, vaya a la página de nuestro website.</a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@producto:(vino PRADOREY PR3 Barricas)",
+      "dialog_node": "node_1_1572097634933",
+      "previous_sibling": "node_4_1572097533652"
+    },
+    {
+      "type": "standard",
+      "title": "LIA DE PRADOREY",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para ver el Vino <a href=\"https://www.pradorey.es/los-vinos/lia/\" target=\"blank\">LIA DE PRADOREY, vaya a la página de nuestro website. </a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@producto:(vino LIA DE PRADOREY)",
+      "dialog_node": "node_8_1572108526132",
+      "previous_sibling": "node_4_1572098313971"
+    },
+    {
+      "type": "standard",
+      "title": "vinos Jóvenes - copy1",
+      "output": {
+        "generic": [
+          {
+            "title": "Vinos Jóvenes",
+            "options": [
+              {
+                "label": "PradoRey Origen",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY ORIGEN"
+                  }
+                }
+              },
+              {
+                "label": "Pradorey Rosado",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY ROSADO"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Sauvignon Blanc",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY SAUGVIGNON BLANC"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Verdejo SE",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY VERDEJO SE"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Verdejo",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY VERDEJO"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@tiempo_maduracion:(Joven)",
+      "dialog_node": "node_1_1572087075483",
+      "previous_sibling": "node_3_1572175099421"
+    },
+    {
+      "type": "standard",
+      "title": "PRADOREY VERDEJO",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para ver el Vino <a href=\"https://www.pradorey.es/los-vinos/pradorey-verdejo/\" target=\"blank\">PRADOREY VERDEJO, vaya a la página de nuestro website. </a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@producto:(vino PRADOREY VERDEJO)",
+      "dialog_node": "node_1_1572097815397",
+      "previous_sibling": "node_1_1572097634933"
+    },
+    {
+      "type": "standard",
+      "title": "PRADOREY ROSADO",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Para ver el Vino <a href=\"https://www.pradorey.es/los-vinos/pradorey-rosado-fermentado/\" target=\"blank\">PRADOREY ROSADO, vaya a la página de nuestro website. </a>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@producto:(vino PRADOREY ROSADO)",
+      "dialog_node": "node_7_1572098148058",
+      "previous_sibling": "node_3_1572098092338"
+    },
+    {
+      "type": "standard",
+      "title": "ADARO",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Te puedo dar la ficha del vino Adaro. Es el vino homenaje al fundador. Para ver el Vino <a href=\"https://www.pradorey.es/los-vinos/adaro/\" target=\"blank\">ADARO, vaya a la página de nuestro website. </a>"
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_7_1572025331243",
+      "conditions": "@producto:(vino ADARO)",
+      "dialog_node": "node_6_1572025925422"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1571739586547",
+      "variable": "$numero_menores",
+      "dialog_node": "slot_8_1571741014711",
+      "previous_sibling": "slot_10_1571740840934"
+    },
+    {
+      "type": "slot",
+      "title": "slot_10_1571740840934",
+      "output": {},
+      "parent": "node_4_1571739586547",
+      "variable": "$numero_adultos",
+      "dialog_node": "slot_10_1571740840934",
+      "previous_sibling": "slot_1_1571740707537"
+    },
+    {
+      "type": "slot",
+      "title": "slot_9_1571741569289",
+      "output": {},
+      "parent": "node_4_1571739586547",
+      "variable": "$hora",
+      "dialog_node": "slot_9_1571741569289",
+      "previous_sibling": "slot_10_1571741524292"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1571739586547",
+      "variable": "$fecha",
+      "dialog_node": "slot_10_1571741524292",
+      "previous_sibling": "slot_8_1571741014711"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1571739586547",
+      "variable": "$actividad",
+      "dialog_node": "slot_1_1571740707537"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "¿Qué actividad desea reservar?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1571740707537",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1571740707550",
+      "previous_sibling": "handler_5_1571740707550"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_1_1571740707537",
+      "context": {
+        "actividad": "@actividad"
+      },
+      "conditions": "@actividad",
+      "event_name": "input",
+      "dialog_node": "handler_5_1571740707550"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_9_1571741569289",
+      "event_name": "filled",
+      "dialog_node": "handler_10_1571741615532",
+      "previous_sibling": "handler_5_1571741569291"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_5_1571741569291",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "¿A qué hora?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_9_1571741569289",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1571741569291",
+      "previous_sibling": "handler_2_1571741569291"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_2_1571741569291",
+      "output": {},
+      "parent": "slot_9_1571741569289",
+      "context": {
+        "hora": "@sys-time"
+      },
+      "conditions": "@sys-time",
+      "event_name": "input",
+      "dialog_node": "handler_2_1571741569291"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "¿Para qué fecha?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1571741524292",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1571741524294",
+      "previous_sibling": "handler_8_1571741524294"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_10_1571741524292",
+      "context": {
+        "fecha": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_8_1571741524294"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "¿Quieres que una lista de todos los vinos? Puedes preguntarme también sobre un tipo de vino, tipo de uva o un tiempo de maduración concreto"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "vale estoy en ello"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1572091297546",
+      "disabled": true,
+      "dialog_node": "response_4_1572091477602"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_3_1571740707550",
+      "output": {
+        "text": {
+          "values": [
+            "¿Cuantas habitaciones desea reservar?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1571817451952",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1571817451952",
+      "previous_sibling": "handler_3_1571817451952"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_5_1571740707550",
+      "output": {},
+      "parent": "slot_2_1571817451952",
+      "context": {
+        "numero_habitaciones": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_3_1571817451952"
+    },
+    {
+      "type": "standard",
+      "title": "A qué horas hay @enoturismo",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "12:00",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "description": "Horarios de las visitas a la bodega de Lunes a Jueves",
+            "response_type": "option"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "11:00",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "11:00",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "description": "Horarios de las visitas a la bodega los Viernes y los Domingos",
+            "response_type": "option"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "11:00",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "12:30",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              },
+              {
+                "label": "17:00",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "description": "Horarios de las visitas a la bodega los sábados",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1571388615054",
+      "conditions": "#TIMES &&  @Bodega && @enoturismo",
+      "dialog_node": "node_1_1571834707339",
+      "previous_sibling": "node_7_1571833582238"
+    },
+    {
+      "type": "standard",
+      "title": "Dónde está la @Bodega",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "La bodega se encuentra en la carretera CL-619. En el kilómetro 66. En la provincia de Burgos"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 5000,
+            "typing": false,
+            "response_type": "pause"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Busco la dirección exacta",
+                "value": {
+                  "input": {
+                    "text": "Carretera CL-619 km 66, 09443 Gumiel de Mercado"
+                  }
+                }
+              },
+              {
+                "label": "voy desde Madrid",
+                "value": {
+                  "input": {
+                    "text": "Ok. Cuando llegues a Aranda del Duero por la A-1,  sal por la salida 159, y coge la carretera CL-619 hacia Palencia"
+                  }
+                }
+              },
+              {
+                "label": "voy desde Valladolid",
+                "value": {
+                  "input": {
+                    "text": "Muy bien, la salida está a la izquierda en el km 66 pero puedes hacer la raqueta por la derecha."
+                  }
+                }
+              },
+              {
+                "label": "Ya he pasado Aranda de Duero",
+                "value": {
+                  "input": {
+                    "text": "Muy bien, la salida está en la CL-619, km 66, en una recta. A la derecha. Hay un cartel a 500 metros"
+                  }
+                }
+              }
+            ],
+            "description": "Por qué lo preguntas?",
+            "response_type": "option"
+          },
+          {
+            "values": [
+              {
+                "text": "Alguna pregunta más?"
+              },
+              {
+                "text": "Te puedo ayudar en algo más?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_1_1571388615054",
+      "conditions": "@Bodega && #GENERAL_INFO",
+      "dialog_node": "node_9_1571384802571",
+      "previous_sibling": "node_6_1571384672227"
+    },
+    {
+      "type": "standard",
+      "title": "A qué horas atiende la @Bodega",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "La bodega atiende desde las 9 de la mañana hasta las 6 de la tarde"
+              },
+              {
+                "text": "La bodega abre sus puertas a las 9 de la mañana hasta las 6 de la tarde. Las visitas son con reserva."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1571388615054",
+      "conditions": " @Bodega:(horario de atención de la bodega)",
+      "dialog_node": "node_7_1571833582238",
+      "previous_sibling": "node_9_1571384802571"
+    },
+    {
+      "type": "standard",
+      "title": "Dónde está la @Posada",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "La posada se encuentra en la carretera CL-619. En el kilómetro 64. En la provincia de Burgos"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1571388615054",
+      "conditions": "@Posada && #GENERAL_INFO",
+      "dialog_node": "node_6_1571384672227"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_10_1571740840937",
+      "output": {
+        "text": {
+          "values": [
+            "¿Para cuantas personas?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1571817451952",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1571817451952",
+      "previous_sibling": "handler_6_1571817451952"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_3_1571740840937",
+      "output": {},
+      "parent": "slot_5_1571817451952",
+      "context": {
+        "numero_personas": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_6_1571817451952"
+    },
+    {
+      "type": "frame",
+      "title": "Servicio (de momento alojamiento)",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muy bien.  Se procede a abrir una reserva de $numero_habitaciones habitaciones para $numero_personas personas desde $fecha_entrada hasta $fecha_salida"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Para completar la reserva solo hace falta el pago, que podrá hacer en esta dirección (link) que se abrirá en otra pestaña de su navegador."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1571733722702",
+      "conditions": " @Posada",
+      "dialog_node": "node_1_1571817451939",
+      "previous_sibling": "node_4_1571739586547"
+    },
+    {
+      "type": "frame",
+      "title": "Actividad",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muchas gracias. Se va a proceder con la reserva para $numero_adultos adultos, $numero_menores menores, el $fecha a las $hora"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Para completar la reserva solo hace falta el pago, que podrá hacer en esta dirección (link) que se abrirá en otra pestaña de su navegador."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1571733722702",
+      "conditions": "@actividad",
+      "dialog_node": "node_4_1571739586547"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "¿Hastá qué fecha?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1571818001615",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1571818001620",
+      "previous_sibling": "handler_6_1571818001620"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_1_1571818001615",
+      "context": {
+        "fecha_salida": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_6_1571818001620"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_3_1571741524294",
+      "output": {
+        "text": {
+          "values": [
+            "¿Desde qué fecha desea alojarse en la Posada?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_11_1571817451952",
+      "event_name": "focus",
+      "dialog_node": "handler_13_1571817451952",
+      "previous_sibling": "handler_12_1571817451952"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_8_1571741524294",
+      "output": {},
+      "parent": "slot_11_1571817451952",
+      "context": {
+        "fecha_entrada": "@sys-date"
+      },
+      "conditions": "@sys-date",
+      "event_name": "input",
+      "dialog_node": "handler_12_1571817451952"
+    },
+    {
+      "type": "slot",
+      "title": "slot_10_1571740840934",
+      "output": {},
+      "parent": "node_1_1571817451939",
+      "variable": "$numero_personas",
+      "dialog_node": "slot_5_1571817451952",
+      "previous_sibling": "slot_2_1571817451952"
+    },
+    {
+      "type": "slot",
+      "title": "slot_10_1571741524292",
+      "output": {},
+      "parent": "node_1_1571817451939",
+      "variable": "$fecha_entrada",
+      "dialog_node": "slot_11_1571817451952",
+      "previous_sibling": "slot_5_1571817451952"
+    },
+    {
+      "type": "slot",
+      "parent": "node_1_1571817451939",
+      "variable": "$fecha_salida",
+      "dialog_node": "slot_1_1571818001615",
+      "previous_sibling": "slot_11_1571817451952"
+    },
+    {
+      "type": "slot",
+      "title": "slot_1_1571740707537",
+      "output": {},
+      "parent": "node_1_1571817451939",
+      "variable": "$numero_habitaciones",
+      "dialog_node": "slot_2_1571817451952"
+    },
+    {
+      "type": "standard",
+      "title": "Embutidos",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomiendan",
+            "options": [
+              {
+                "label": "PradoRey Origen",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY ORIGEN"
+                  }
+                }
+              },
+              {
+                "label": "El Alfarero",
+                "value": {
+                  "input": {
+                    "text": "vino EL ALFARERO"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar embutidos",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:Embutidos",
+      "dialog_node": "node_8_1572218803898",
+      "previous_sibling": "node_6_1572217607320"
+    },
+    {
+      "type": "standard",
+      "title": "Arroces",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomiendan",
+            "options": [
+              {
+                "label": "El Buen Alfarero",
+                "value": {
+                  "input": {
+                    "text": "vino EL BUEN ALFARERO"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Sauvignon Blanc ",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY SAUVIGNON BLANC"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Rosado",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY ROSADO"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Verdejo",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY VERDEJO"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Verdejo SE",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY VERDEJO SE"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar arroces",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:Arroces",
+      "dialog_node": "node_8_1572212143479",
+      "previous_sibling": "node_7_1572195556659"
+    },
+    {
+      "type": "standard",
+      "title": "Postres",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomiendan",
+            "options": [
+              {
+                "label": "El Cuentista",
+                "value": {
+                  "input": {
+                    "text": "vino EL CUENTISTA"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar el postre",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:Postres",
+      "dialog_node": "node_8_1572213532088",
+      "previous_sibling": "node_1_1572195097243"
+    },
+    {
+      "type": "standard",
+      "title": "Caza Menor",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomiendan",
+            "options": [
+              {
+                "label": "Finca La Mina",
+                "value": {
+                  "input": {
+                    "text": "vino FINCA LA MINA"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar carnes de caza menor",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:(Caza menor)",
+      "dialog_node": "node_9_1572193384122",
+      "previous_sibling": "node_1_1572193121025"
+    },
+    {
+      "type": "standard",
+      "title": "vinos blancos",
+      "output": {
+        "generic": [
+          {
+            "title": "Lista",
+            "options": [
+              {
+                "label": "El Cuentista",
+                "value": {
+                  "input": {
+                    "text": "Blanc de Noirs. 9 meses en barricas de roble americano Crianza sobre lías de uva Sauvignon Blanc"
+                  }
+                }
+              }
+            ],
+            "description": "vinos blancos de PradoRey",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@tipo_vino:blanco",
+      "dialog_node": "node_10_1572087419323",
+      "previous_sibling": "node_7_1572086731999"
+    },
+    {
+      "type": "standard",
+      "title": "Quesos semicurados",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomiendan",
+            "options": [
+              {
+                "label": "El Buen Alfarero",
+                "value": {
+                  "input": {
+                    "text": "vino EL BUEN ALFARERO"
+                  }
+                }
+              },
+              {
+                "label": "Pradorey Verdejo SE",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY VERDEJO SE"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar quesos semicurados",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:(Queso semicurado)",
+      "dialog_node": "node_5_1572214221000",
+      "previous_sibling": "node_1_1572213959945"
+    },
+    {
+      "type": "standard",
+      "title": "Pescados azules",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomiendan",
+            "options": [
+              {
+                "label": "PradoRey Verdejo SE",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY VERDEJO SE"
+                  }
+                }
+              },
+              {
+                "label": "PR3 Barricas",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY PR3 BARRICAS"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Verdejo",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY VERDEJO"
+                  }
+                }
+              },
+              {
+                "label": "El Cuentista",
+                "value": {
+                  "input": {
+                    "text": "vino EL CUENTISTA"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Sauvignon Blanc",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY SAUVIGNON BLANC"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar pescados azules",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:(Pescado azul)",
+      "dialog_node": "node_7_1572197253228",
+      "previous_sibling": "node_3_1572196606862"
+    },
+    {
+      "type": "standard",
+      "title": "vinos Jóvenes",
+      "output": {
+        "generic": [
+          {
+            "title": "Adaro (vino homenaje al fundador)",
+            "options": [],
+            "description": "12 meses barrica roble francés y esloveno. 3 meses en conos de madera de Nevers. Este vino tiene una puntuación 93 en la guía Peñín",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@tiempo_maduracion:(Joven)",
+      "dialog_node": "node_7_1572086731999",
+      "previous_sibling": "node_10_1572211092531"
+    },
+    {
+      "type": "standard",
+      "title": "Pescados blancos",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomiendan",
+            "options": [
+              {
+                "label": "PradoRey Verdejo SE",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY VERDEJO SE"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Verdejo",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY VERDEJO"
+                  }
+                }
+              },
+              {
+                "label": "PR3 Barricas",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY BARRICAS"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Sauvignon Blanc",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY SAUVIGNON BLANC"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar pescados blancos",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:(Pescado blanco)",
+      "dialog_node": "node_3_1572196606862",
+      "previous_sibling": "node_9_1572193384122"
+    },
+    {
+      "type": "standard",
+      "title": "Mariscos",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomiendan",
+            "options": [
+              {
+                "label": "El Buen Alfarero",
+                "value": {
+                  "input": {
+                    "text": "vino EL BUEN ALFARERO"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Sauvignon Blanc",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY SAUVIGNON BLANC"
+                  }
+                }
+              },
+              {
+                "label": "PR3 Barricas",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY PR3 BARRICAS"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar los mariscos",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:Mariscos",
+      "dialog_node": "node_10_1572211092531",
+      "previous_sibling": "node_7_1572197253228"
+    },
+    {
+      "type": "standard",
+      "title": "todos los vinos?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Puedes preguntarme también sobre un tipo de vino, tipo de uva o un tiempo de maduración concreto"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Vinos PRADOREY",
+            "options": [
+              {
+                "label": "ADARO (18€)",
+                "value": {
+                  "input": {
+                    "text": "Precio botella del vino ADARO 18€"
+                  }
+                }
+              },
+              {
+                "label": "PRADOREY ORIGEN (7,25€)",
+                "value": {
+                  "input": {
+                    "text": "Precio botella del vino  PRADOREY ORIGEN 7,25€"
+                  }
+                }
+              },
+              {
+                "label": "PRADOREY PR3 Barricas  (20€)",
+                "value": {
+                  "input": {
+                    "text": "Precio botella del vino PRADOREY PR3 Barricas  20€"
+                  }
+                }
+              },
+              {
+                "label": "PRADOREY VERDEJO  (6,30€)",
+                "value": {
+                  "input": {
+                    "text": "Precio botella del vino PRADOREY VERDEJO  6,30€"
+                  }
+                }
+              },
+              {
+                "label": "PRADOREY SAUVIGNON BLANC (7,75€)",
+                "value": {
+                  "input": {
+                    "text": "Precio botella del vino PRADOREY SAUVIGNON BLANC 7,75€"
+                  }
+                }
+              },
+              {
+                "label": "FINCA VALDELAYEGUA (14,50€)",
+                "value": {
+                  "input": {
+                    "text": "Precio botella del vino FINCA VALDELAYEGUA  14,50€"
+                  }
+                }
+              },
+              {
+                "label": "PRADOREY ELITE (29€)",
+                "value": {
+                  "input": {
+                    "text": "Precio botella del vino PRADOREY ELITE 29€"
+                  }
+                }
+              },
+              {
+                "label": "EL BUEN ALFARERO (120€)",
+                "value": {
+                  "input": {
+                    "text": "Precio botella del vino EL BUEN ALFARERO 120€"
+                  }
+                }
+              },
+              {
+                "label": "PRADOREY ROSADO (8,75€)",
+                "value": {
+                  "input": {
+                    "text": "Precio botella del vino PRADOREY ROSADO 8,75€"
+                  }
+                }
+              },
+              {
+                "label": "EL CUENTISTA  (16,50€)",
+                "value": {
+                  "input": {
+                    "text": "Precio botella del vino EL CUENTISTA 16,50€"
+                  }
+                }
+              },
+              {
+                "label": "FINCA LA MINA  (22€)",
+                "value": {
+                  "input": {
+                    "text": "Precio botella del vino FINCA LA MINA  22€"
+                  }
+                }
+              },
+              {
+                "label": "FINCA REAL SITIO DE VENTOSILLA   (40€)",
+                "value": {
+                  "input": {
+                    "text": "Precio botella del vino FINCA REAL SITIO DE VENTOSILLA   40€"
+                  }
+                }
+              },
+              {
+                "label": "LIA PRADOREY (16,50€)",
+                "value": {
+                  "input": {
+                    "text": "Precio botella del vino LIA PRADOREY 16,50€"
+                  }
+                }
+              },
+              {
+                "label": "PRADOREY VERDEJO SE (9,95€)",
+                "value": {
+                  "input": {
+                    "text": "Precio botella del vino PRADOREY VERDEJO SE 9,95€"
+                  }
+                }
+              },
+              {
+                "label": "SR. NIÑO (9,50€)",
+                "value": {
+                  "input": {
+                    "text": "Precio botella del vino SR. NIÑO 9,50€"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#todos_los_vinos",
+      "dialog_node": "node_6_1572091297546",
+      "previous_sibling": "node_10_1572087419323"
+    },
+    {
+      "type": "standard",
+      "title": "Platos de carnes blancas",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomiendan",
+            "options": [
+              {
+                "label": "El Buen Alfarero",
+                "value": {
+                  "input": {
+                    "text": "vino EL BUEN ALFARERO"
+                  }
+                }
+              },
+              {
+                "label": "El Cuentista",
+                "value": {
+                  "input": {
+                    "text": "vino EL CUENTISTA"
+                  }
+                }
+              },
+              {
+                "label": "PR3 Barricas",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY PR3 BARRICAS"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar carnes blancas",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:(Carnes blancas)",
+      "dialog_node": "node_1_1572195097243",
+      "previous_sibling": "node_4_1572029231566"
+    },
+    {
+      "type": "standard",
+      "title": "Chocolate",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomiendan",
+            "options": [
+              {
+                "label": "PradoRey Finca La Mina",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY FINCA LA MINA"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar chocolate",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:Chocolates",
+      "dialog_node": "node_1_1572213156155",
+      "previous_sibling": "node_8_1572212143479"
+    },
+    {
+      "type": "standard",
+      "title": "Plato desconocido",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Disculpe, no tengo ninguna recomendación para lo que Ud. solicita. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "anything_else",
+      "dialog_node": "node_8_1572084684003",
+      "previous_sibling": "node_6_1572091297546"
+    },
+    {
+      "type": "standard",
+      "title": "Aves",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomiendan",
+            "options": [
+              {
+                "label": "PradoRey Verdejo SE",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY VERDEJO SE"
+                  }
+                }
+              },
+              {
+                "label": "Finca La Mina",
+                "value": {
+                  "input": {
+                    "text": "vino FINCA LA MINA"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar carne de aves",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:Aves",
+      "dialog_node": "node_7_1572195556659",
+      "previous_sibling": "node_8_1572218803898"
+    },
+    {
+      "type": "standard",
+      "title": "Quesos cremosos",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomiendan",
+            "options": [
+              {
+                "label": "PradoRey Origen",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY ORIGEN"
+                  }
+                }
+              },
+              {
+                "label": "Lia de PradoRey",
+                "value": {
+                  "input": {
+                    "text": "vino LIA DE PRADOREY"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar quesos cremosos",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:(Quesos cremosos)",
+      "dialog_node": "node_10_1572218365441",
+      "previous_sibling": "node_5_1572214221000"
+    },
+    {
+      "type": "standard",
+      "title": "Caza mayor",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomiendan",
+            "options": [
+              {
+                "label": "Adaro",
+                "value": {
+                  "input": {
+                    "text": "vino ADARO"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Élite",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY ELITE"
+                  }
+                }
+              },
+              {
+                "label": "Finca Real Sitio de Ventosilla",
+                "value": {
+                  "input": {
+                    "text": "vino FINCA REAL SITIO DE VENTOSILLA"
+                  }
+                }
+              },
+              {
+                "label": "Finca Valdelayegua",
+                "value": {
+                  "input": {
+                    "text": "vino FINCA VALDELAYEGUA"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar carne de caza mayor",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:(Caza mayor)",
+      "dialog_node": "node_1_1572193121025",
+      "previous_sibling": "node_5_1572191116373"
+    },
+    {
+      "type": "standard",
+      "title": "Quesos curados",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomiendan",
+            "options": [
+              {
+                "label": "Finca Valdelayegua",
+                "value": {
+                  "input": {
+                    "text": "vino FINCA VALDELAYEGUA"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar quesos curados",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:(Queso curado)",
+      "dialog_node": "node_1_1572213959945",
+      "previous_sibling": "node_8_1572213532088"
+    },
+    {
+      "type": "standard",
+      "title": "Pastas",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomiendan",
+            "options": [
+              {
+                "label": "PR3 Barricas",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY PR3 Barricas"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Verdejo",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY VERDEJO"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Verdejo SE",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY VERDEJO SE"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Rosado",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY ROSADO"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar pastas",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:Pastas",
+      "dialog_node": "node_5_1572191116373",
+      "previous_sibling": "node_8_1572190062237"
+    },
+    {
+      "type": "standard",
+      "title": "Ensalada",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomiendan",
+            "options": [
+              {
+                "label": "Lia de PradoRey",
+                "value": {
+                  "input": {
+                    "text": "vino LIA DE PRADOREY"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar ensaladas",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:Ensalada",
+      "dialog_node": "node_8_1572213758552",
+      "previous_sibling": "node_1_1572213156155"
+    },
+    {
+      "type": "standard",
+      "title": "Asados",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomiendan",
+            "options": [
+              {
+                "label": "El Cuentista",
+                "value": {
+                  "input": {
+                    "text": "vino EL CUENTISTA"
+                  }
+                }
+              },
+              {
+                "label": "Adaro",
+                "value": {
+                  "input": {
+                    "text": "vino ADARO"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Élite",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY ELITE"
+                  }
+                }
+              },
+              {
+                "label": "Finca Sitio Real de Ventosilla",
+                "value": {
+                  "input": {
+                    "text": "vino FINCA REAL SITIO DE VENTOSILLA"
+                  }
+                }
+              },
+              {
+                "label": "Finca Valdelayegua",
+                "value": {
+                  "input": {
+                    "text": "vino FINCA VALDELAYEGUA"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar asados",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:Asados",
+      "dialog_node": "node_8_1572190062237",
+      "previous_sibling": "node_10_1572218365441"
+    },
+    {
+      "type": "standard",
+      "title": "Platos con Carne roja",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomendación",
+            "options": [
+              {
+                "label": "Adaro (homenaje al fundador)",
+                "value": {
+                  "input": {
+                    "text": "vino ADARO"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Élite",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY ELITE"
+                  }
+                }
+              },
+              {
+                "label": "Finca Real Sitio de Ventosilla",
+                "value": {
+                  "input": {
+                    "text": "vino FINCA REAL SITIO DE VENTOSILLA"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar asados, carne roja y caza",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:(Carne roja)",
+      "dialog_node": "node_4_1572029231566",
+      "previous_sibling": "node_8_1572213758552"
+    },
+    {
+      "type": "standard",
+      "title": "Aperitivos",
+      "output": {
+        "generic": [
+          {
+            "title": "Recomiendan",
+            "options": [
+              {
+                "label": "Lia de PradoRey",
+                "value": {
+                  "input": {
+                    "text": "vino LIA DE PRADOREY"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Sauvignon Blanc",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY SAUVIGNON BLANC"
+                  }
+                }
+              },
+              {
+                "label": "PradoRey Verdejo SE",
+                "value": {
+                  "input": {
+                    "text": "vino PRADOREY VERDEJO SE"
+                  }
+                }
+              }
+            ],
+            "description": "Para acompañar aperitivos",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1572025703073",
+      "conditions": "@plato:Aperitivos",
+      "dialog_node": "node_6_1572217607320"
+    },
+    {
+      "type": "standard",
+      "title": "de la posada",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Esa es la dirección de la posada de Real Sitio de Ventosilla"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1571998158773",
+      "conditions": "@Posada",
+      "dialog_node": "node_2_1571998580985",
+      "previous_sibling": "node_7_1571998381385"
+    },
+    {
+      "type": "standard",
+      "title": "de la bodega",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Esa es la dirección de la bodega de PradoRey"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1571998158773",
+      "conditions": "@Bodega",
+      "dialog_node": "node_7_1571998381385"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "¿Cuantos menores desea incluir en la reserva?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1571741014711",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1571741014715",
+      "previous_sibling": "handler_3_1571741014715"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_8_1571741014711",
+      "context": {
+        "numero_menores": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_3_1571741014715"
+    },
+    {
+      "type": "standard",
+      "title": "De nada",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "De nada"
+              },
+              {
+                "text": "No hay de qué"
+              },
+              {
+                "text": "gracias a tí, encantados de poder ayudar"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 5000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "time": 4000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "¿Puedo ayudarte en algo más?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Agradecer",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_9_1571831783859",
+      "previous_sibling": "node_3_1571391495197"
+    },
+    {
+      "type": "standard",
+      "title": "Reserva habitación",
+      "output": {
+        "generic": [
+          {
+            "title": "Reservas disponibles",
+            "options": [
+              {
+                "label": "Enoturismo (visita + cata)",
+                "value": {
+                  "input": {
+                    "text": "Una reserva de enoturismo"
+                  }
+                }
+              },
+              {
+                "label": "Alojamiento en la Posada",
+                "value": {
+                  "input": {
+                    "text": "Una reserva en la posada"
+                  }
+                }
+              },
+              {
+                "label": "Teatro",
+                "value": {
+                  "input": {
+                    "text": "Una reserva para el teatro"
+                  }
+                }
+              }
+            ],
+            "description": "Elija la reserva que desea realizar",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#MAKE_A_RESERVATION",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_8_1571733722702",
+      "previous_sibling": "node_7_1572025331243"
+    },
+    {
+      "type": "standard",
+      "title": "Fuera de contexto",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "mmm"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "time": 2000,
+            "typing": true,
+            "response_type": "pause"
+          },
+          {
+            "values": [
+              {
+                "text": "No entendí bien"
+              },
+              {
+                "text": "¿Cómo? "
+              },
+              {
+                "text": "¿Perdón?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_9_1571831783859"
+    },
+    {
+      "type": "standard",
+      "title": "UNO O VARIOS VINOS",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#SUGGESTION_FOR_MARIDAJE",
+      "dialog_node": "node_5_1572025703073",
+      "previous_sibling": "node_1_1571388615054"
+    },
+    {
+      "type": "standard",
+      "title": "te da una dirección",
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@location",
+      "dialog_node": "node_6_1571998158773",
+      "previous_sibling": "node_8_1571733722702"
+    },
+    {
+      "type": "standard",
+      "title": "INFORMACIÓN SOBRE VINO",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "INFORMACION DE VINOS"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#ABOUT_WINES ||              #SPECIFIC_WINE ||  @producto || @VINO",
+      "dialog_node": "node_7_1572025331243",
+      "previous_sibling": "node_5_1572025703073"
+    },
+    {
+      "type": "standard",
+      "title": "hablar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Mi nombre es Mr. Parra, soy el asistente virtual de la bodega PradoRey - Real Sitio de Ventosilla."
+              },
+              {
+                "text": "Me llamo Mr. Parra. Soy un bot virtual de la bodega PradoRey - Real Sitio de Ventosilla"
+              },
+              {
+                "text": "Soy Mr. Parra. Te puedo ayudar sobre las principales dudas sobre la Bodega PradoRey y la Posada Real Sitio de Ventosilla"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          },
+          {
+            "values": [
+              {
+                "text": "Puedo ayudarte si lo deseas"
+              },
+              {
+                "text": "Puedo ayudarte en algo?"
+              },
+              {
+                "text": "Me gustaría ayudarte"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#hablar",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1571391495197",
+      "previous_sibling": "node_6_1571998158773"
+    },
+    {
+      "type": "standard",
+      "title": "INFORMACION GENERAL",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#GENERAL_INFO",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1571388615054",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Bienvenida",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hola. Pregúntame sobre la bodega PradoRey o la Posada, también sobre sus vinos o un maridaje. "
+              },
+              {
+                "text": "Hola. Puedo contestarte sobre la bodega PradoRey o la Posada del Real Sitio de Ventosilla, también puedo hacer una reserva o contestar sobre los tipos de vinos. Estoy aquí para ayudar"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "digress_in": "does_not_return",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "workspace_id": "512e440f-f826-4a75-9a1a-9478f315b137",
+  "counterexamples": [],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "status": "Available"
+}
